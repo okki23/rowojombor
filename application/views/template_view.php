@@ -35,19 +35,20 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN PAGE LEVEL PLUGINS -->
         <link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" /> 
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css">
         <!-- BEGIN THEME LAYOUT STYLES -->
         <link href="assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="favicon.ico" /> </head>
+ 
     <!-- END HEAD -->
 
     <body class="page-container-bg-solid page-boxed">
@@ -121,6 +122,9 @@ License: You must have a valid license purchased only from themeforest(the above
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
                                 <a href="javascript:;"> Pembelian </a> 
+                            </li>
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;"> Report </a> 
                             </li>
                              
                              
@@ -754,8 +758,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <![endif]-->
         <!-- BEGIN CORE PLUGINS -->
         <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
         <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
         <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
         <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
@@ -764,27 +767,9 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN PAGE LEVEL PLUGINS -->
         <script src="assets/global/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
         <script src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
- 
+        <script src="assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>  
+        <script src="assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script> 
+        <script src="assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script> 
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
@@ -794,9 +779,14 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <script src="assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
-        <script src="assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
-        <script src="assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script> 
         <!-- END THEME LAYOUT SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+         <script>
+              new DataTable('#example');
+         </script>
     </body>
 
 </html>
