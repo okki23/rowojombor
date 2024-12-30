@@ -112,25 +112,23 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="hor-menu  ">
                         <ul class="nav navbar-nav">
                             <li class="menu-dropdown classic-menu-dropdown active">
-                                <a href="javascript:;"> Dashboard </a> 
+                                <a href="<?php echo base_url('dashboard'); ?>"> Dashboard </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="javascript:;"> Penjualan </a> 
+                                <a href="<?php echo base_url('penjualan'); ?>"> Penjualan </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="javascript:;"> Sewa/Antar </a> 
+                                <a href="<?php echo base_url('sewa'); ?>"> Sewa/Antar </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="javascript:;"> Pembelian </a> 
+                                <a href="<?php echo base_url('pembelian'); ?>"> Pembelian </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="javascript:;"> Report </a> 
+                                <a href="<?php echo base_url('pajak'); ?>"> Report </a> 
                             </li>
-                             
-                             
-                            
-                          
-                            
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="<?php echo base_url('report'); ?>"> Report </a> 
+                            </li> 
                         </ul>
                     </div>
                     <!-- END MEGA MENU -->
