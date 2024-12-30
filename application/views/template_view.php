@@ -115,13 +115,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <a href="<?php echo base_url('dashboard'); ?>"> Dashboard </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="<?php echo base_url('penjualan'); ?>"> Penjualan </a> 
+                                <a href="<?php echo base_url('penjualan'); ?>"> PO (Purchase Order) </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="<?php echo base_url('sewa'); ?>"> Sewa/Antar </a> 
-                            </li>
-                            <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="<?php echo base_url('pembelian'); ?>"> Pembelian </a> 
+                                <a href="<?php echo base_url('pembelian'); ?>"> SO (Sales Order) </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
                                 <a href="<?php echo base_url('report'); ?>"> Report </a> 
