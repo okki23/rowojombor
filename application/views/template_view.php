@@ -124,11 +124,9 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <a href="<?php echo base_url('pembelian'); ?>"> Pembelian </a> 
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown">
-                                <a href="<?php echo base_url('pajak'); ?>"> Report </a> 
-                            </li>
-                            <li class="menu-dropdown classic-menu-dropdown">
                                 <a href="<?php echo base_url('report'); ?>"> Report </a> 
-                            </li> 
+                            </li>
+                         
                         </ul>
                     </div>
                     <!-- END MEGA MENU -->
