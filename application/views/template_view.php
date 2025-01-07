@@ -20,10 +20,10 @@
     <!--! END: Bootstrap CSS-->
     <!--! BEGIN: Vendors CSS-->
     <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/dataTables.bs5.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/css/jquery.steps.min.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/dataTables.bs5.min.css">       
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/datepicker.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
     <!--! END: Vendors CSS-->
     <!--! BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css">
@@ -34,14 +34,11 @@
     <script src="assets/vendors/js/vendors.min.js"></script>
     <!-- vendors.min.js {always must need to be top} -->
     <script src="assets/vendors/js/dataTables.min.js"></script>
-    <script src="assets/vendors/js/dataTables.bs5.min.js"></script>
-    <script src="assets/vendors/js/select2.min.js"></script>
-    <script src="assets/vendors/js/select2-active.min.js"></script>
-    <script src="assets/vendors/js/jquery.steps.min.js"></script>
-    <script src="assets/vendors/js/jquery.validate.min.js"></script>
-         
+    <script src="assets/vendors/js/dataTables.bs5.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
     <!--! END: Vendors JS !-->
-    <!--! BEGIN: Apps Init  !-->
+    <!--! BEGIN: Apps Init  !-->    
+    <script src="assets/vendors/js/datepicker.min.js"></script>
     <script src="assets/js/common-init.min.js"></script>  
     <!--! END: Apps Init !-->
     <!--! BEGIN: Theme Customizer  !-->
