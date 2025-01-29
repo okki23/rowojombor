@@ -80,6 +80,7 @@
                             <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('ship_jual'); ?>">Ship Jual</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('ship_beli'); ?>">Ship Beli</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('tangki'); ?>">Tangki</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('plan'); ?>">Plan</a></li>
                         </ul>
                     </li> 
                     <li class="nxl-item nxl-hasmenu">
@@ -88,8 +89,9 @@
                             <span class="nxl-mtext">Transaksi</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('penjualan'); ?>">Sales Order (SO)</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('pembelian'); ?>">Purchase Order (PO)</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('sales'); ?>">Sales Order (SO)</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('purchase'); ?>">Purchase Order (PO)</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="<?php echo base_url('spb'); ?>">SPB</a></li>
                         </ul>
                     </li> 
                     <li class="nxl-item nxl-hasmenu">
