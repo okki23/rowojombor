@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Penjualan extends MY_Controller {
+class Spb extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,7 +21,7 @@ class Penjualan extends MY_Controller {
 	public function index()
 	{
 		// $data['judul'] = $this->data['judul']; 
-  		$data['konten'] = 'penjualan/penjualan_view';
+  		$data['konten'] = 'spb/spb_view';
   		$this->load->view('template_view',$data);	
 	}
 }

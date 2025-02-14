@@ -5,7 +5,7 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard'); ?>">Home</a></li>
-                            <li class="breadcrumb-item">Sales Order (SO) </li>
+                            <li class="breadcrumb-item">Surat Pengiriman Barang (SPB) </li>
                         </ul>
                     </div>
                     <div class="page-header-right ms-auto">
@@ -33,23 +33,25 @@
                                         <table class="table table-hover" id="projectList">
                                             <thead>
                                                 <tr>
-                                                    <th>Sales Person</th>
+                                                    <th>SPB Number</th>
                                                     <th>PO Number</th>
-                                                    <th>Shipment Date</th>
-                                                    <th>Shipment VIA</th>
-                                                    <th>F.O.B</th>
-                                                    <th>Terms</th>
+                                                    <th>SO Number</th>
+                                                    <th>Driver PIC</th>
+                                                    <th>No Pol</td>
+                                                    <th>Produk</th>
+                                                    <th>Kuantiti</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="single-item">
+                                                    <td>89242343</td>
+                                                    <td>324234323</td>
+                                                    <td>034504354</td>
                                                     <td>Mr.Andi</td>
-                                                    <td>832384932</td>
-                                                    <td>2024-09-03</td>
-                                                    <td>Depot Sampit</td>
-                                                    <td>Free On Board</td>
-                                                    <td>001</td> 
+                                                    <td>KH 8343 BBH</td>
+                                                    <td>HSD</td>
+                                                    <td>1000 Liter</td> 
                                                     <td style="text-align: center;">
                                                         <div class="hstack gap-2 justify-content-end">
                                                             <a href="javascript:void(0);" class="avatar-text avatar-md details_so">
@@ -85,29 +87,71 @@
                                         <form id="project-details" novalidate="novalidate">
                                             <fieldset>
                                                 <div class="mb-5">
-                                                    <h2 class="fs-16 fw-bold">Form SO</h2>
-                                                    <p class="text-muted">Lengkapi isian pada form SO dibawah ini.</p>
+                                                    <h2 class="fs-16 fw-bold">Form SPB</h2>
+                                                    <p class="text-muted">Lengkapi isian pada form SPB dibawah ini.</p>
                                                 </div>
                                                 <fieldset> 
                                                     <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Produk </label>
-                                                        <select class="form-select" id="sales_person">
+                                                        <label for="projectName" class="form-label">SPB Number <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="po_number" name="po_number">
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="projectName" class="form-label">SPB Date <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="po_number" name="po_number">
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="projectName" class="form-label">Konsumen </label>
+                                                        <select class="form-select" id="sales_persons">
                                                             <option>--Pilih--</option>
-                                                            <option>Pertalite</option>
-                                                            <option>Pertamax</option>
-                                                            <option>HSD</option>
+                                                            <option>PT GBMS</option>
+                                                            <option>PT MBS</option>
+                                                            <option>PT SCP</option>
                                                         </select>
                                                     </div>
 
                                                     <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Qty <span class="text-danger">*</span></label>
+                                                        <label for="projectName" class="form-label">PO Number </label>
+                                                        <select class="form-select" id="sales_person">
+                                                            <option>--Pilih--</option>
+                                                            <option>098332423</option>
+                                                            <option>984523423</option>
+                                                            <option>823432424</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="projectName" class="form-label">SO Number </label>
+                                                        <select class="form-select" id="sales_personx">
+                                                            <option>--Pilih--</option>
+                                                            <option>098332423</option>
+                                                            <option>984523423</option>
+                                                            <option>823432424</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="projectName" class="form-label">DO/LO Number </label>
+                                                        <select class="form-select" id="sales_personz">
+                                                            <option>--Pilih--</option>
+                                                            <option>098332423</option>
+                                                            <option>984523423</option>
+                                                            <option>823432424</option>
+                                                        </select>
+                                                    </div>
+ 
+                                                    <div class="mb-4">
+                                                        <label for="projectName" class="form-label">Produk <span class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="po_number" name="po_number">
                                                     </div>
 
                                                     <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Harga Satuan <span class="text-danger">*</span></label>
+                                                        <label for="projectName" class="form-label">Kuantiti <span class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="po_number" name="po_number">
                                                     </div>
+
+                                                    
                                                     
                                                     <div class="mb-4">
                                                         <label for="projectName" class="form-label">Konsumen </label>
@@ -119,81 +163,22 @@
                                                         </select>
                                                     </div>
 
-                                                    <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Ongkos Angkut <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="po_number" name="po_number">
-                                                    </div>
 
                                                     <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Total Amount <span class="text-danger">*</span></label>
+                                                        <label for="projectName" class="form-label">Jumlah Loses <span class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="po_number" name="po_number">
-                                                    </div>
+                                                    </div> 
+
                                                     <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Document <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="document" name="document">
-                                                    </div>
-                                                    <div class="mb-4">
-                                                        <label for="projectName" class="form-label">DO Number <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="do_number" name="do_number">
-                                                    </div>
-                                                    <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Shipment Date </label>
-                                                        <input type="text" class="form-control" id="shipment_date" name="shipment_date">
-                                                    </div>
-                                                    <div class="mb-4">
-                                                        <label for="projectName" class="form-label">Ship VIA </label>
-                                                        <input type="text" class="form-control" id="ship_via" name="ship_via">
-                                                    </div>
-                                                    <div class="mb-4">
-                                                        <label for="projectName" class="form-label">F.O.B </label>
-                                                        <input type="text" class="form-control" id="fob" name="fob">
-                                                    </div>
- 
-                                                    <div class="mb-4">
-                                                        <label class="form-label">Terms </label>
-                                                        <select class="form-select" id="terms" data-placeholder="Choose one thing">
-                                                            <option>--Pilih--</option>
-                                                            <option>001</option>
-                                                            <option>002</option>
-                                                            <option>003</option>
-                                                            <option>004</option>
-                                                        </select>
-                                                    </div>
+                                                        <label for="projectName" class="form-label">File BAP Konsumen Loses <span class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control">
+                                                    </div> 
                                                 </fieldset>
                                             </fieldset>
                                         </form>
-                                        <div class="col-lg-4">
-                                            <a href="javascript::void(0);" id="addDetail" class="btn btn-primary"> &nbsp;  Add Detail Data</a>
-                                        </div>
+                                        
                                     </div>
-                                    <div class="col-lg-12">                                      
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Desciption</th>
-                                                    <th>UOM</th>
-                                                    <th>QTY</th>
-                                                    <th>Unit Price</th>
-                                                    <th>Amount</th>
-                                                    <th>Option</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Solar HSD</td>
-                                                    <td>Liter</td>
-                                                    <td>10.000</td>
-                                                    <td>15.000</td>
-                                                    <td>15.000.000</td>
-                                                    <td>  
-                                                        <a href="javascript:void(0);" class="avatar-text avatar-md">
-                                                            <i class="feather feather-trash"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                  
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -418,6 +403,24 @@
                         });
                     });
                     $('#sales_person').select2({
+                        theme: "bootstrap-5",
+                        dropdownParent: $('#exampleModal'),
+                        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+                        placeholder: $(this).data('placeholder'),
+                    });
+                    $('#sales_persons').select2({
+                        theme: "bootstrap-5",
+                        dropdownParent: $('#exampleModal'),
+                        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+                        placeholder: $(this).data('placeholder'),
+                    });
+                    $('#sales_personx').select2({
+                        theme: "bootstrap-5",
+                        dropdownParent: $('#exampleModal'),
+                        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+                        placeholder: $(this).data('placeholder'),
+                    });
+                    $('#sales_personz').select2({
                         theme: "bootstrap-5",
                         dropdownParent: $('#exampleModal'),
                         width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',

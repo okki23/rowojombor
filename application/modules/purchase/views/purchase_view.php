@@ -33,6 +33,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>PO Number</th>
+                                                    <th>SO Number</th>
                                                     <th>PO Date</th>
                                                     <th>Konsumen</th>
                                                     <th>PPN 11 %</th>
@@ -44,6 +45,7 @@
                                             <tbody>
                                                 <tr class="single-item">
                                                     <td>832384932</td>
+                                                    <td>728242433</td>
                                                     <td>2024-09-03</td>
                                                     <td>PT.SIMPANG MAJU</td>
                                                     <td>Yes</td>
@@ -96,6 +98,16 @@
                                                     <div class="mb-4">
                                                         <label for="projectName" class="form-label">PO Date <span class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="po_date" name="po_date">
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label class="form-label">SO Number </label>
+                                                        <select class="form-select" id="id_konsumen" data-placeholder="Choose one thing">
+                                                            <option>--Pilih--</option>
+                                                            <option>2743244</option>
+                                                            <option>7435843</option>
+                                                            <option>8345435</option>
+                                                        </select>
                                                     </div>
 
                                                     <div class="mb-4">
